@@ -1,0 +1,38 @@
+mkdir test3
+echo -e "row1\nrow2\nrow3\nrow4" >test3/4
+cat test3/4
+echo -e "row1\nrow2\nrow3\nrow4" > test3/5
+echo -e "row1\nrow2\nrow3\nrow4" > test3/6
+pwd
+ls
+grep row2 test3/5
+grep row test3/
+grep row test3/*
+grep -c row test3/6
+find test3/ -name 5
+find test3 -name 5
+find test3 -name 5 -delete -print
+find test3 -name 5
+echo "test" >> test3/4
+nano test3/4
+echo "test" >> test3/4
+cat test3/4
+ps aux| grep 666
+kill 666
+ping artsiomrusau.com
+ping -c 5 artsiomrusau.com
+curl -X GET https://petstore.swagger.io/v2/pet/findByStatus?status=available
+curl -X POST https://petstore.swagger.io/v2/user  -d '{
+  "id": 0,
+  "username": "new_user",
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "j.dou@mail.com",
+  "password": "super_mega_password",
+  "phone": "103",
+  "userStatus": 0
+}' | jq
+code lesson1
+code lesson1.txt
+code lesson2.txt
+history
