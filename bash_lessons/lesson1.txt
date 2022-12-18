@@ -1,0 +1,60 @@
+bash-3.2$ pwd
+/Users/julia
+bash-3.2$ mkdir test1
+bash-3.2$ cd test1
+bash-3.2$ touch 1
+bash-3.2$ touch 2
+bash-3.2$ touch 3
+bash-3.2$ ls
+1	2	3
+bash-3.2$ cd ~
+bash-3.2$ mkdir test2
+bash-3.2$ rmdir ~/test2
+bash-3.2$ cd -
+/Users/julia/test1
+bash-3.2$ rm 2
+bash-3.2$ mkdir test3
+bash-3.2$ pwd
+/Users/julia/test1
+bash-3.2$ ls
+1	3	test3
+bash-3.2$ touch test3/file1
+bash-3.2$ touch test3/file2
+bash-3.2$ rm -R test3
+bash-3.2$ ls
+1	3
+bash-3.2$ mkdir test4
+bash-3.2$ mv 1 test4/
+bash-3.2$ mv 3 test4/
+bash-3.2$ echo line >> test4/1
+bash-3.2$ echo line >> test4/1
+bash-3.2$ echo line >> test4/1
+bash-3.2$ cat test4/1
+line
+line
+line
+bash-3.2$ echo line >> test4/3
+bash-3.2$ echo line >> test4/3
+bash-3.2$ echo line >> test4/3
+bash-3.2$ pwd
+/Users/julia/test1
+bash-3.2$ cat test4/1 test4/3
+line
+line
+line
+line
+line
+line
+bash-3.2$ nano
+bash-3.2$ nano test4/1
+bash-3.2$ cat test4/1
+zamenila
+vse
+stroki
+bash-3.2$ nano test 4/
+bash-3.2$ nano test4/3
+bash-3.2$ cat test4/3
+dubl
+dva
+zamena
+bash-3.2$
